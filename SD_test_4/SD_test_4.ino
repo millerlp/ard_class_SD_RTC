@@ -1,7 +1,11 @@
-// SD_test_4
-// This version utilizes the Real Time Clock in addition to the SD card.
-// This version integrates a TMP36 temperature sensor as well
-
+/* SD_test_4
+   This version utilizes the Real Time Clock in addition to the SD card.
+   This version integrates a TMP36 temperature sensor as well.
+   Finally, this version adds two extra functions, writeToSD and 
+   initFileName to streamline the main setup and loop() sections, but
+   also to make the output files formatted and named in a more useful
+  style. 
+*/
 
 #include <SdFat.h>
 #include <SPI.h> // required for RTClib library to work
