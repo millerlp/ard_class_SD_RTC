@@ -35,4 +35,4 @@ Wiring diagrams for the various sketches:
 
 For the RealTimeClock_reset and RealTimeClock_read sketches, the breadboard wiring is 
 similar to this, but check the exact pins on the Real Time Clock board.
-[real time clock](/images/real_time_clock_bb.png?raw=true)
+![real time clock](/images/real_time_clock_bb.png?raw=true)
