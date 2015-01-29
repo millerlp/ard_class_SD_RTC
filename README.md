@@ -30,3 +30,9 @@ Analog pins 4 (SDA) and 5 (SCL)
 ------------------------------
 Formatting utility for SD cards: 
 https://www.sdcard.org/downloads/formatter_4/ 
+
+Wiring diagrams for the various sketches:
+
+For the RealTimeClock_reset and RealTimeClock_read sketches, the breadboard wiring is 
+similar to this, but check the exact pins on the Real Time Clock board.
+[real time clock](./images/real_time_clock_bb.png)
