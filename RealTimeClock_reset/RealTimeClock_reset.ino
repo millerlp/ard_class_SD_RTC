@@ -13,12 +13,12 @@ date.
 #include <SPI.h> // Required for RTClib to compile properly
 #include <RTClib.h> // From https://github.com/mizraith/RTClib
 // If you use the DS3231, include the line below, otherwise comment out
-//#include <RTC_DS3231.h> // From https://github.com/mizraith/RTClib
+#include <RTC_DS3231.h> // From https://github.com/mizraith/RTClib
 // If you use the DS1307, include the line below, otherwise comment out
-#include <RTC_DS1307.h> // From https://github.com/mizraith/RTClib
+//#include <RTC_DS1307.h> // From https://github.com/mizraith/RTClib
 
-//RTC_DS3231 RTC; // uncomment if using the DS3231
-RTC_DS1307 RTC; // uncomment if using the DS1307
+RTC_DS3231 RTC; // uncomment if using the DS3231
+//RTC_DS1307 RTC; // uncomment if using the DS1307
 
 boolean resetFlag = false; // flag for clock reset
 
