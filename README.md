@@ -35,4 +35,13 @@ Wiring diagrams for the various sketches:
 
 For the RealTimeClock_reset and RealTimeClock_read sketches, the breadboard wiring is 
 similar to this, but check the exact pins on the Real Time Clock board.
-![real time clock](/images/real_time_clock_bb.png?raw=true)
+![real time clock](/images/real_time_clock_bb.png?raw=true "Real Time Clock wiring")
+
+For the 1st SD card sketch SD_test_1, do the following wiring:
+![SD_test_1](/images/SD_test_1_bb.png?raw=true "SD_test_1")
+
+For the 2nd SD card sketch SD_test_2, which adds the Real Time Clock, your wiring should look like this:
+![SD_test_2](/images/SD_test_2_bb.png?raw=true "SD_test_2")
+
+And for the 3rd SD card sketch SD_test_3, which adds a TMP36 or LM35 temperature sensor, the wiring should look like this:
+![SD_test_3](/images/SD_test_3_bb.png?raw=true "SD_test_3")
