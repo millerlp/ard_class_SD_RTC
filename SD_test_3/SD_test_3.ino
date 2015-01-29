@@ -2,9 +2,7 @@
 // This version utilizes the Real Time Clock in addition to the SD card.
 // This version integrates a TMP36 temperature sensor as well
 
-// Define which Arduino pin is the chip select line for the SD card.
-// On the Adafruit datalogging shield this value should be 10
-const int chipSelect = 10;
+
 
 #include <SdFat.h>
 #include <SPI.h> // required for RTClib library to work
@@ -21,7 +19,9 @@ RTC_DS3231 RTC; // uncomment if using the DS3231
 SdFat sd;
 SdFile myFile;
 
-byte counter = 0; // used to keep count of cycles
+// Define which Arduino pin is the chip select line for the SD card.
+// On the Adafruit datalogging shield this value should be 10
+const int chipSelect = 10;
 
 void setup() {
   Serial.begin(9600);

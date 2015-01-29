@@ -1,14 +1,14 @@
 // Basic example of using the SdFat library to create and write to a 
 // file, and then open and read that file back. 
 
+#include <SdFat.h> // include the SdFat library
+
+SdFat sd; // instantiate the sd card object
+SdFile myFile; // instantiate the file object that you will write to
+
 // Define which Arduino pin is the chip select line for the SD card.
 // On the Adafruit datalogging shield this value should be 10
 const int chipSelect = 10;
-
-#include <SdFat.h>
-
-SdFat sd;
-SdFile myFile;
 
 void setup() {
  Serial.begin(9600);

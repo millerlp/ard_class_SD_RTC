@@ -1,4 +1,4 @@
-You need the real time clock library and SdFat library.
+You need the Real Time Clock library and SdFat library.
 * RTClib: https://github.com/mizraith/RTClib
 * SdFat: https://github.com/greiman/SdFat
 

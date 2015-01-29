@@ -1,9 +1,7 @@
 // SD_test_2
 // This version utilizes the Real Time Clock in addition to the SD card.
 
-// Define which Arduino pin is the chip select line for the SD card.
-// On the Adafruit datalogging shield this value should be 10
-const int chipSelect = 10;
+
 
 #include <SdFat.h>
 #include <SPI.h> // required for RTClib library to work
@@ -17,8 +15,12 @@ const int chipSelect = 10;
 RTC_DS3231 RTC; // uncomment if using the DS3231
 //RTC_DS1307 RTC; // uncomment if using the DS1307
 
-SdFat sd;
-SdFile myFile;
+SdFat sd; // instantiate the sd card object
+SdFile myFile; // instantiate the file object that you will write to
+
+// Define which Arduino pin is the chip select line for the SD card.
+// On the Adafruit datalogging shield this value should be 10
+const int chipSelect = 10;
 
 byte counter = 0; // used to keep count of cycles
 
