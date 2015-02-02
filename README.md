@@ -10,13 +10,19 @@ Place the folder RTClib inside your Arduino/libraries/ directory.
 Extract the SdFat-master.zip file, open the SdFat-master folder. Inside find the SdFat folder,
 copy that to your Arduino/libraries directory. 
 
-After putting those two folders in your Arduino/libraries folder, you *MUST RESTART* the Arduino software. 
+After putting those two folders in your Arduino/libraries folder, you *MUST RESTART* the Arduino software so 
+the Arduino software can find the new library files. 
 
 ------------------------------
 Download the ZIP file for this repository. Extract the zip file, rename the folder inside
 from ard_class_SD_RTC-master to ard_class_SD_RTC, and place that folder inside your Arduino/ directory.
 
 Restart the Arduino program so that both new libraries and the sketches can be found by the software. 
+-----------------------------
+The sketch RealTimeClock_reset can be used with a DS1307 or DS3231 clock to set the date and time on
+the clock. The sketch RealTimeClock_read should be uploaded immediately after RealTimeClock_reset is 
+uploaded, so that RealTimeClock_reset can only ever run once on the Arduino (since it resets the clock
+to the original time every time the Arduino restarts). 
 
 -----------------------------
 On the Uno, the SPI bus pins used to connect to a SD card adapter are:
