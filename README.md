@@ -10,6 +10,8 @@ Place the folder RTClib inside your Arduino/libraries/ directory.
 Extract the SdFat-master.zip file, open the SdFat-master folder. Inside find the SdFat folder,
 copy that to your Arduino/libraries directory. 
 
+After putting those two folders in your Arduino/libraries folder, you *MUST RESTART* the Arduino software. 
+
 ------------------------------
 Download the ZIP file for this repository. Extract the zip file, rename the folder inside
 from ard_class_SD_RTC-master to ard_class_SD_RTC, and place that folder inside your Arduino/ directory.
